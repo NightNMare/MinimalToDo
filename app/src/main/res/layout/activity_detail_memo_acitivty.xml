@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailMemoAcitivty">
+
+    <TextView
+        android:id="@+id/View_Title"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        tools:text="제목"
+        android:textSize="30sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="#c8c8c8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <TextView
+        tools:text="내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        android:textSize="20sp"
+        android:id="@+id/View_Section"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#e1e1e1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="2">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#c8c8c8"
+            android:gravity="center"
+            android:text="편집"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#c8c8c8"
+            android:gravity="center"
+            android:text="삭제"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+</LinearLayout>

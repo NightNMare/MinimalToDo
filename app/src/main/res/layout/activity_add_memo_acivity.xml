@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddMemoAcivity">
+
+    <EditText
+        android:id="@+id/Edit_Title"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_margin="10dp"
+        android:background="#c8c8c8"
+        android:hint="제목" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="10dp"
+        android:background="#e8e8e8">
+
+        <EditText
+            android:id="@+id/Edit_Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="내용" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="2">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/notsave"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#c8c8c8"
+            android:gravity="center"
+            android:text="저장 안함"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#c8c8c8"
+            android:gravity="center"
+            android:text="저장"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+</LinearLayout>
